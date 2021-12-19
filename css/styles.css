@@ -232,10 +232,21 @@ form {
   margin-right: auto;
 }
 
+.img-jfs {
+  max-height: 200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .accordion-item {
   background-color: #f2e7bf;
   border: 2px solid rgba(0, 0, 0, 0.125);
   color: #771138;
+}
+
+.info-foto {
+  color: black;
 }
 
 footer {
