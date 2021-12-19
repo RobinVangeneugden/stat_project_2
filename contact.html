@@ -7,15 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/da2578a957.js" crossorigin="anonymous"></script>
     <link rel="icon" href="bestanden/favicon (1).ico" type="image/gif" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300&family=Lobster+Two:ital@0;1&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Contact</title>
 </head>
 
 <body class="bg-info">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger border-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Robin Vangeneugden</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,71 +49,76 @@
 
         </nav>
     </header>
-    <section>
-        <h2>Contactformulier</h2>
-        <form>
-            <div>
-                <label for="voornaam">Voornaam: </label>
-                <input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam..">
+    <section class="container">
+        <h2 class="title-page">Contactformulier</h2>
+        <hr class="my-4">
+        <form class="row g-3">
+            <div class="col-md-4 needs-validation">
+                <label for="inputvoornaam" class="form-label">Voornaam</label>
+                <input type="text" id="inputvoornaam" class="form-control is-invalid"
+                    aria-describedby="inputGroupPrepend" required />
+                <div class="invalid-feedback">
+                    Geef je voornaam in.
+                </div>
             </div>
-            <div>
-                <label for="familienaam">Familienaam: </label>
-                <input type="text" id="familienaam" name="familienaam" placeholder="Uw familienaam..">
+            <div class="col-md-4 needs-validation">
+                <label for="inputfamilienaam" class="form-label">Familienaam</label>
+                <input type="text" id="inputfamilienaam" class="form-control is-invalid"
+                    aria-describedby="inputGroupPrepend" required />
+                <div class="invalid-feedback">
+                    Geef je familienaam in.
+                </div>
             </div>
-            <div>
-                <label for="e-mail">E-mail: </label>
-                <input type="text" id="e-mail" name="e-mailadres" placeholder="Uw e-mailadres..">
+            <div class="col-md-8 needs-validation">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" id="inputEmail" class="form-control is-invalid" aria-describedby="inputGroupPrepend"
+                    required />
+                <div class="invalid-feedback">
+                    Geef je emailadres in.
+                </div>
             </div>
-            <div>
-                <label for="bericht">Bericht: </label>
-                <textarea name="bericht" id="" cols="30" rows="10"></textarea>
+            <div class="col-md-8">
+                <label for="slectSkills" class="form-label">Interesse in Skills</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">HTML5</option>
+                    <option value="2">CSS3</option>
+                    <option value="3">C#</option>
+                    <option value="4">Data-modelling</option>
+                    <option value="5">Document-database</option>
+                    <option value="6">Telecom</option>
+                    <option value="7">Drums</option>
+                </select>
             </div>
-            <div>
-                <label for="man">M</label>
-                <input type="radio" id="man" name="geslacht" value="man">
-
-                <label for="vrouw">V</label>
-                <input type="radio" id="vrouw" name="geslacht" value="vrouw">
-
-                <label for="andere">X</label>
-                <input type="radio" id="andere" name="geslacht" value="andere">
+            <div class="col-md-8">
+                <label for="inputVraag" class="form-label">Stel hier uw vraag</label>
+                <textarea type="text" class="form-control" id="inputVraag" rows="5"></textarea>
             </div>
-            <div>
-                <button>Verzenden</button>
+            <div class="col-12">
+                <button class="btn btn-danger" type="submit">Submit form</button>
             </div>
-            <div>
-                <h2>Locatie</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.1543979945504!2d4.959210315659165!3d51.160942879579636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c14c011b4bcb87%3A0xb5b970e9f2a6ce42!2sThomas%20More%20-%20Campus%20Geel!5e0!3m2!1snl!2sbe!4v1634585469201!5m2!1snl!2sbe"
-                    width="500px" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </form>
-        <div>
-            <a href="mailto:robin.vangeneugden@outlook.com" target="_blank"><svg width="50px" aria-hidden="true"
-                    focusable="false" data-prefix="fas" data-icon="envelope-open-text"
-                    class="svg-inline--fa fa-envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512">
-                    <path fill="currentColor"
-                        d="M256 417.1c-16.38 0-32.88-4.1-46.88-15.12L0 250.9v213.1C0 490.5 21.5 512 48 512h416c26.5 0 48-21.5 48-47.1V250.9l-209.1 151.1C288.9 412 272.4 417.1 256 417.1zM493.6 163C484.8 156 476.4 149.5 464 140.1v-44.12c0-26.5-21.5-48-48-48l-77.5 .0016c-3.125-2.25-5.875-4.25-9.125-6.5C312.6 29.13 279.3-.3732 256 .0018C232.8-.3732 199.4 29.13 182.6 41.5c-3.25 2.25-6 4.25-9.125 6.5L96 48c-26.5 0-48 21.5-48 48v44.12C35.63 149.5 27.25 156 18.38 163C6.75 172 0 186 0 200.8v10.62l96 69.37V96h320v184.7l96-69.37V200.8C512 186 505.3 172 493.6 163zM176 255.1h160c8.836 0 16-7.164 16-15.1c0-8.838-7.164-16-16-16h-160c-8.836 0-16 7.162-16 16C160 248.8 167.2 255.1 176 255.1zM176 191.1h160c8.836 0 16-7.164 16-16c0-8.838-7.164-15.1-16-15.1h-160c-8.836 0-16 7.162-16 15.1C160 184.8 167.2 191.1 176 191.1z">
-                    </path>
-                </svg></a>
-            <a href="https://www.linkedin.com/in/robin-vangeneugden-5089158b/" target="_blank"><svg width="50px"
-                    aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin"
-                    class="svg-inline--fa fa-linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512">
-                    <path fill="currentColor"
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
-                    </path>
-                </svg></a>
-        </div>
-
     </section>
     <footer class="bg-danger border-top text-center">
-        <p>&copy; Robin Vangeneugden</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; 2021 Robin Vangeneugden</p>
+                </div>
+                <div class="col">
+                    <a href="mailto:robin.vangeneugden@outlook.com" class="btn btn-outline-info" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-envelope-open"></i> MailMe</a>
+                    <a href="https://www.linkedin.com/in/robin-vangeneugden-5089158b/" class="btn btn-outline-info"
+                        target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.facebook.com/wearegeel" class="btn btn-outline-info" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

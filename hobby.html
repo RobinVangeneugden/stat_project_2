@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="bestanden/favicon (1).ico" type="image/gif" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300&family=Lobster+Two:ital@0;1&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Hobby</title>
 </head>
 
 <body class="bg-info">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger border-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Robin Vangeneugden</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,50 +48,161 @@
 
         </nav>
     </header>
-    <section>
-        <h2>Hobby</h2>
-        <h3>Percussie</h3>
-        <img width="350px" src="afbeeldingVoorWebsite/drummer.jpg" alt="foto drummer Robin" title="Foto drummer Robin">
-        <ol>
-            <li>
-                <h4>Start Percussie</h4>
-                <p>Al van kinds af aan speel ik percussie. Op mijn zesde kreeg ik mijn eerste drum en ik ben sindsdien
-                    niet meer gestopt. Mijn laatst aangekochte drum dateert van 2016.</p>
-            </li>
-            <li>
-                <h4>Harmonie Hasselt</h4>
-                <p>Ik speelde 5 jaar lang voor de harmonie van Hasselt. Na die 5 jaar heb ik nog een paar concerten mee
-                    gespeeld voor de harmonie. Dit waren voornamelijk galaconcerten. Een vaste bezetting heb ik
-                    sindsdien niet meer aangenomen.</p>
-                <a href="http://www.khh.be/" target="_blank">http://www.khh.be</a>
-            </li>
-            <li>
-                <h4>Bands</h4>
-                <p>Na de harmonie ging mijn interesse ook meer uit naar het spelen in bands. Optredens zijn er helaas
-                    nog niet geweest, maar wat niet is kan nog altijd komen. De eerste band waarin ik speelde was
-                    <strong>“Bridges To Burn”</strong>. Een band
-                    die ik had opgericht met kameraden, maar dit was meer voor de fun. Na Bridges To Burn heb ik de band
-                    <strong>“Orthygia”</strong> opgericht met mijn vader als gitarist. Dit hebben we professioneler
-                    proberen aanpakken, maar is uiteindelijk
-                    ook geëindigd in 2018 door tijdsgebrek. Het blijft een droom van mij om ooit als drummer een album
-                    uit te brengen met een band, alsook optredens te mogen geven.
-                </p>
-            </li>
-            <li>
-                <h4>Timpana</h4>
-                <p>Tot voor kort speelde ik terug bij een drumband genaamd <strong>“Timpana”</strong>. Timpana werd
-                    opgericht met een visie om nieuwe mensen op te leren en het maximum van hun talent eruit te halen.
-                    Het is de bedoeling van dirigent “Kris
-                    Vanelderen” om zoveel mogelijk optredens te doen. Om uiteindelijk ook grote optredens te doen en als
-                    daar het winnen van een prijs van komt is dit natuurlijk mooi meegenomen.</p>
-                <a href="https://www.facebook.com/TimpanaGodsheide" target="_blank"><img width="350px"
-                        src="afbeeldingVoorWebsite/logo timpana.jpg" alt="Logo Timpana"
-                        title="klik hier voor meer info over Timpana"></a>
-            </li>
-        </ol>
+    <section class="container">
+        <h2 class="title-page">Drums en Percussie</h2>
+        <hr class="my-4">
+        <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+            <div class="p-3 carousel-inner">
+                <div class="carousel-item active">
+                    <h4>Medaille voor 5 jaar KH Hasselt</h4>
+                    <img src="img/medaille 5jaar drumband.jpg" class="d-block carousel-img"
+                        alt="Medaille 5 jaar drumband" title="Medaille 5 jaar drumband">
+                </div>
+                <div class="carousel-item">
+                    <h4>Oefening baart kunst</h4>
+                    <img src="img/drummer.jpg" class="d-block carousel-img" alt="Ik aan de drum"
+                        title="Robin aan de drum">
+                </div>
+                <div class="carousel-item">
+                    <h4>Al 6 jaar mijn trouwe partner</h4>
+                    <img src="img/drums.jpg" class="d-block carousel-img" alt="Mijn drums" title="Robin's drums">
+                </div>
+                <div class="carousel-item">
+                    <h4>Drumband Timpana, waar iedereen kan groeien in Percussie</h4>
+                    <img src="img/logo timpana.jpg" class="d-block carousel-img" alt="Het logo van Timpana"
+                        title="Logo Timpana">
+                </div>
+                <div class="carousel-item">
+                    <h4>Het liefste gebruik ik Vic-Firth 7AN sticks</h4>
+                    <img src="img/sticks.jpg" class="d-block carousel-img" alt="Vic-Firth 7AN sticks"
+                        title="Drumsticks van Vic Firth, maat 7AN">
+                </div>
+                <div class="carousel-item">
+                    <h4>Eén van mijn lievelingsinstrumenten in percussie: de cajon</h4>
+                    <img src="img/cajon.jpg" class="d-block carousel-img" alt="de cajon" title="Een cajon">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="p-3 accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h4>Start Percussie</h4>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Al van kinds af aan speel ik percussie. Op mijn zesde kreeg ik mijn eerste drum en ik ben
+                            sindsdien
+                            niet meer gestopt. Mijn laatst aangekochte drum dateert van 2016.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h4>Harmonie Hasselt</h4>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Ik speelde 5 jaar lang voor de harmonie van Hasselt. Na die 5 jaar heb ik nog een paar
+                            concerten
+                            mee
+                            gespeeld voor de harmonie. Dit waren voornamelijk galaconcerten. Een vaste bezetting heb ik
+                            sindsdien niet meer aangenomen.</p>
+                        <a href="https://harmoniehasselt.be/" class="btn btn-outline-danger" target="_blank"
+                            rel="noopener noreferrer"><i class="bi bi-eye-fill"></i></i> Website KHH</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h4>Bands</h4>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Na de harmonie ging mijn interesse ook meer uit naar het spelen in bands. Optredens zijn er
+                            helaas
+                            nog niet geweest, maar wat niet is kan nog altijd komen. De eerste band waarin ik speelde
+                            was
+                            <strong>“Bridges To Burn”</strong>. Een band
+                            die ik had opgericht met kameraden, maar dit was meer voor de fun.
+                        </p>
+                        <p>Na Bridges To Burn heb ik
+                            de
+                            band
+                            <strong>“Orthygia”</strong> opgericht met mijn vader als gitarist. Dit hebben we
+                            professioneler
+                            proberen aanpakken, maar is uiteindelijk
+                            ook geëindigd in 2018 door tijdsgebrek. Het blijft een droom van mij om ooit als drummer een
+                            album
+                            uit te brengen met een band, alsook optredens te mogen geven.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <h4>Timpana</h4>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Tot voor kort speelde ik terug bij een drumband genaamd <strong>“Timpana”</strong>. Timpana
+                            werd
+                            opgericht met een visie om nieuwe mensen op te leren en het maximum van hun talent eruit te
+                            halen.
+                            Het is de bedoeling van dirigent “Kris
+                            Vanelderen” om zoveel mogelijk optredens te doen. Om uiteindelijk ook grote optredens te
+                            doen en
+                            als
+                            daar het winnen van een prijs van komt is dit natuurlijk mooi meegenomen.</p>
+                        <a href="https://www.facebook.com/TimpanaGodsheide" class="btn btn-outline-danger"
+                            target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i> Facebook
+                            Timpana</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="bg-danger border-top text-center">
-        <p>&copy; Robin Vangeneugden</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; 2021 Robin Vangeneugden</p>
+                </div>
+                <div class="col">
+                    <a href="mailto:robin.vangeneugden@outlook.com" class="btn btn-outline-info" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-envelope-open"></i> MailMe</a>
+                    <a href="https://www.linkedin.com/in/robin-vangeneugden-5089158b/" class="btn btn-outline-info"
+                        target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.facebook.com/wearegeel" class="btn btn-outline-info" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

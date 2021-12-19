@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="bestanden/favicon (1).ico" type="image/gif" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300&family=Lobster+Two:ital@0;1&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Curriculum Vitae</title>
 </head>
 
 <body class="bg-info">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger border-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Robin Vangeneugden</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,64 +48,162 @@
 
         </nav>
     </header>
-    <section>
-        <h2>Over Mij</h2>
-        <img width="150px" src="afbeeldingVoorWebsite/profielfoto.jpg" alt="Profielfoto van Robin"
-            title="Robin Vangeneugden">
-        <table border=3>
-            <tr>
-                <th>Voornaam: </th>
-                <td colspan="3">Robin</td>
-            </tr>
-            <tr>
-                <th>Familienaam: </th>
-                <td colspan="3">Vangeneugden</td>
-            </tr>
-            <tr>
-                <th>Leeftijd: </th>
-                <td colspan="3">29 jaar</td>
-            </tr>
-            <tr>
-                <th>Studie: </th>
-                <td colspan="3">Graduaat Programmeren</td>
-            </tr>
-            <tr>
-                <th>School: </th>
-                <td colspan="3">Thomas More Geel</td>
-            </tr>
-            <tr>
-                <th>Huidige job: </th>
-                <td colspan="3">Telecom engineer bij Janssens Field Services
-                    <p>(Zie meer op pagina ervaring)</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Hobby: </th>
-                <td colspan="3">Drummen
-                    <p>(Zie pagina Hobby's)</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sterke punten: </th>
-                <td>Punctueel</td>
-                <td>Geduldig</td>
-                <td>Helpende hand</td>
-            </tr>
-            <tr>
-                <th>Minpunten: </th>
-                <td>Soms te impulsief</td>
-                <td colspan="2">Gevoelig voor meningen</td>
-            </tr>
-        </table>
-        <p>Ik ben al een tijdje geïnteresseerd in webdesign/programmeren en na lange tijd heb ik de stap voor mezelf
-            genomen om naast mijn huidige job terug naar school te gaan. Ik ben alvast sterk gemotiveerd om meer bij te
-            leren en ik hoop jullie met deze
-            website een eerste voorproefje te geven van mijn kunnen.
-        </p>
-        <button><a href="bestanden/CV robin vangeneugden.docx">Download Cv</a></button>
+    <section class="container">
+        <h2 class="title-page">Mijn Curriculum Vitae</h2>
+        <hr class="my-4">
+        <div>
+            <div class="p-1 row">
+                <article class="col-md-2">
+                    <div class="card mb-3">
+                        <img src="img/profielfoto.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                </article>
+                <article class="col-md">
+                    <table class="table bg-danger">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Voornaam</th>
+                                <td>Robin</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Familienaam</th>
+                                <td>Vangeneugden</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Leeftijd</th>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Woonachtig</th>
+                                <td>Ham, België</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td>r0318322@student.thomasmore.be</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Talen</th>
+                                <td>
+                                    <ul>
+                                        <li>Nederlands als moedertaal</li>
+                                        <li>Engels is zeer goed</li>
+                                        <li>Ik kan mij behelpen in het frans</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Studie</th>
+                                <td>
+                                    <ul>
+                                        <li>2010: Afgestudeerd aan de richting EIT op Sint-Martinusscholen Herk-de-Stad
+                                        </li>
+                                        <li>2011: Afgestudeerd aan beveiligingtechnieken op Damiaaninstituut Aarschot
+                                        </li>
+                                        <li>2014: Afgestudeerd aan pc-technieken op Leonardo Lyceum Berchem</li>
+                                        <li>2015: IBO opleiding tot telecom-technieker bij Janssens Field Services</li>
+                                        <li>2018: Opleiding Proximus</li>
+                                        <li>2021: Begonnen aan graduaat Programmeren op Thomas More Hogeschool Geel</li>
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Werkervaring</th>
+                                <td>
+                                    <ul>
+                                        <li>Pc-technieker bij IRS te Bornem</li>
+                                        <li>Telecom-technieker bij Janssens Field Services te Antwerpen</li>
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Skills</th>
+                                <td>
+                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="p-3 carousel-inner">
+                                            <div class="carousel-item active">
+                                                <h3>Schrijven van HTML5 code</h3>
+                                                <img src="img/html.jpg" class="d-block carousel-img" alt="HTML5 code"
+                                                    title="HTML5 code">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3>Schrijven van CSS code</h3>
+                                                <img src="img/css.jpg" class="d-block carousel-img" alt="CSS code"
+                                                    title="CSS code">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3>Programmeren in C#</h3>
+                                                <img src="img/Csharp.jpg" class="d-block carousel-img" alt="C# code"
+                                                    title="C# code">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3>Ontwerpen van een datamodel</h3>
+                                                <img src="img/data modelling.jpg" class="d-block carousel-img"
+                                                    alt="voorbeeld data modellering" title="voorbeeld data modellering">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3>Datamodel omzetten in een document database</h3>
+                                                <img src="img/document database.jpg" class="d-block carousel-img"
+                                                    alt="hoe een document database word geschreven"
+                                                    title="hoe een document database word geschreven">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3>Installatie van proximus modem en telefoon</h3>
+                                                <img src="img/modem en telefoon.jpg" class="d-block carousel-img"
+                                                    alt="proximus modem en telefoon" title="proximus modem en telefoon">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3>Installatie van Proximus TV</h3>
+                                                <img src="img/proximusTv.jpg" class="d-block carousel-img"
+                                                    alt="proximus TV" title="proximus TV">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3>5 jaar drumband-ervaring</h3>
+                                                <img src="img/medaille 5jaar drumband.jpg" class="d-block carousel-img"
+                                                    alt="Medaille 5 jaar drumband" title="5 jaar drumband">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3>Bespelen van de drums</h3>
+                                                <img src="img/drums.jpg" class="d-block carousel-img" alt="Drum"
+                                                    title="drum">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                        </tbody>
+                    </table>
+                </article>
+
+
+
     </section>
     <footer class="bg-danger border-top text-center">
-        <p>&copy; Robin Vangeneugden</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; 2021 Robin Vangeneugden</p>
+                </div>
+                <div class="col">
+                    <a href="mailto:robin.vangeneugden@outlook.com" class="btn btn-outline-info" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-envelope-open"></i> MailMe</a>
+                    <a href="https://www.linkedin.com/in/robin-vangeneugden-5089158b/" class="btn btn-outline-info"
+                        target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.facebook.com/wearegeel" class="btn btn-outline-info" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

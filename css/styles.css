@@ -1,0 +1,245 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --bs-danger-rgb: 119, 17, 56;
+    --bs-info-rgb: 131, 155, 179;
+    --bs-warning-rgb: 224, 173, 158;
+    --bs-bordeaux: #771138;
+    --bs-dustyBlue: #839bb3;
+    --bs-beige: #f2e7bf;
+    --bs-dustyPink: #e0ad9e;
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #f2e7bf;
+  text-align: left;
+  background-color: #771138;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #e0ad9e;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.bg-danger {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+  color: #f2e7bf;
+}
+
+.bg-info {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-warning {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
+  color: #771138;
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-dark .navbar-brand {
+  color: #f2e7bf;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #f2e7bf;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(224, 173, 158, 0.75);
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #839bb3;
+}
+
+.btn-outline-info {
+  color: #f2e7bf;
+  border-color: #f2e7bf;
+}
+
+.btn-outline-info:hover {
+  color: #000;
+  background-color: #e0ad9e;
+  border-color: #e0ad9e;
+}
+
+.btn-outline-danger {
+  color: #771138;
+  border-color: #771138;
+}
+
+.btn-outline-danger:hover {
+  color: #000;
+  background-color: #771138;
+  border-color: #771138;
+}
+
+.btn-check:focus + .btn-outline-info, .btn-outline-info:focus {
+  box-shadow: 0 0 0 0.25rem rgba(224, 173, 158, 0.5);
+}
+
+.btn-outline-warning {
+  color: #c7a800;
+  border-color: #c7a800;
+}
+
+.btn-outline-warning:hover {
+  color: #fff;
+  background-color: #c7a800;
+  border-color: #c7a800;
+}
+
+.btn-check:focus + .btn-outline-danger, .btn-outline-danger:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-danger {
+  color: #f2e7bf;
+  background-color: #771138;
+  border-color: #771138;
+}
+
+.btn-danger:hover {
+  color: black;
+  background-color: #e0ad9e;
+  border-color: #e0ad9e;
+}
+
+.btn-warning {
+  color: #771138;
+  background-color: #c7a800;
+  border-color: black;
+}
+
+.btn-warning:hover {
+  color: black;
+  background-color: #e0ad9e;
+  border-color: #e0ad9e;
+}
+
+.border-bottom {
+  border-bottom: 5px solid #e0ad9e !important;
+}
+
+
+main {
+  margin: 1.5rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #771138;
+  background-clip: border-box;
+  border: 2px solid rgba(224, 173, 158, 0.5);
+  border-radius: 0.25rem;
+}
+
+.card-text{
+  color: #f2e7bf;
+}
+
+main h2 {
+    font-size: 2.6em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main p {
+    margin-top: 1em;
+    padding: 0;
+    font-size: 25px;
+    color: white;
+}
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.border-top {
+  border-top: 5px solid #e0ad9e !important;
+}
+
+.title-page{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+form {
+  margin: 1rem;
+  padding: 1rem;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel{
+   width: 70%;
+}
+
+.carousel-item {
+  padding: 1rem;
+}
+
+.carousel-item h4 {
+  color: #771138;
+  text-align: center;
+  font-weight: bold;
+}
+
+.carousel-img {
+  max-height: 500px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-item {
+  background-color: #f2e7bf;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  color: #771138;
+}
+
+footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #f2e7bf;
+}
